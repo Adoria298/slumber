@@ -10,6 +10,7 @@ def play_line():
     """
     print("Button pressed.")
     playsound("./WhoDisturbsMySlumber.wav")
+    print("Played.")
 
 button.when_pressed = play_line
 
