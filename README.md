@@ -3,8 +3,7 @@
 Raspberry Pi project used to make the Pi play the famous "Who Disturbs My Slumber?" line from Disnery's 
 Aladdin at the push of a button. Line Copyright Disney.
 
-I have set this up with a simple button in a breadboard connected to GPIO pin #2. I use a systemd service 
-to automatically run `main.py` at boot (once sound has been loaded).
+I have set this up with a simple button in a breadboard connected to GPIO pin #2 and the GND pin. I use a systemd service to automatically run `main.py` at boot (once sound has been loaded).
 
 ## Dependencies
 
