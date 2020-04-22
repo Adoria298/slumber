@@ -2,17 +2,18 @@ from gpiozero import Button
 from signal import pause
 import os
 
-os.system("mplayer WhoDisturbsMySlumber.wav")
+path = os.abspath("./WhoDisturbsMySlumber.wav")
+os.system("mplayer " + path)
 print("Played sound.")
 
 button = Button(2)
 
 def shutdown():
     """
-    Reboots on button press.
+    Shuts down on button press.
     """
     print("Button pressed. Rebooting.")
-    os.system("sudo shutdown -r now")
+    os.system("sudo shutdown now")
 
 button.when_pressed = shutdown
 
